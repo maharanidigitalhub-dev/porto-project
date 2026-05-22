@@ -1,0 +1,119 @@
+✅ CORRECT FOLDER STRUCTURE FOR PORTO
+
+porto-project/
+│
+├── Portfolio - Navy.html                    ← Main file (109 KB)
+│                                              [Ganti dengan file baru]
+│
+├── image-slot.js                            ← Required JavaScript (31 KB)
+│                                              [Copy dari bundle]
+│
+├── logos/                                   ← Brand logos folder
+│   ├── msglow.png                           ✅ Size-lg (520x200)
+│   ├── msglow.svg
+│   ├── erha.png                             ✅ Size-lg (520x200)
+│   ├── erha.svg
+│   ├── thomascook.png                       ✅ Size-lg (520x200)
+│   ├── thomascook.svg
+│   ├── j99corp.png                          ✅ Size-lg (520x200)
+│   ├── j99corp.svg
+│   ├── roove.png                            (320x120)
+│   ├── roove.svg
+│   ├── sudobrew.png                         (320x120)
+│   ├── sudobrew.svg
+│   ├── miraigroup.png                       (320x120)
+│   ├── miraigroup.svg
+│   ├── noaa.png                             (320x120)
+│   ├── noaa.svg
+│   ├── sukkhacitta.png                      (320x120)
+│   ├── sukkhacitta.svg
+│   ├── spicemantra.png                      (320x120)
+│   ├── spicemantra.svg
+│   ├── prastore.png                         (320x120)
+│   ├── prastore.svg
+│   ├── privilege.png                        (320x120)
+│   ├── privilege.svg
+│   ├── auntyjis.png                         (320x120)
+│   ├── auntyjis.svg
+│   ├── paletas.png                          (320x120)
+│   ├── paletas.svg
+│   ├── sariater.png                         (320x120)
+│   ├── sariater.svg
+│   ├── adafashion.png                       (320x120)
+│   ├── adafashion.svg
+│   ├── dny.png                              (320x120)
+│   ├── dny.svg
+│   ├── almona.png                           (320x120)
+│   ├── almona.svg
+│   ├── buti.png                             (320x120)
+│   ├── buti.svg
+│   ├── homewell.png                         (320x120)
+│   ├── homewell.svg
+│   ├── hwd.png                              (320x120)
+│   └── hwd.svg
+│
+└── uploads/                                 ← All asset images
+    ├── Logo Portfolio/                      (21 brand logos duplicates)
+    │   ├── Logo MS Glow.png
+    │   ├── Logo ERHA.png
+    │   └── ... (19 more)
+    │
+    ├── case-studies/                        (Case study images)
+    │   ├── case1-image.jpg
+    │   ├── case2-image.jpg
+    │   └── ... (case study assets)
+    │
+    └── ... (other asset folders)
+
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️  IMPORTANT NOTES:
+
+1. ALL FILES MUST BE IN PROJECT ROOT
+   ✅ Correct:   project/image-slot.js
+   ❌ Wrong:     project/assets/image-slot.js
+   
+2. FOLDER NAMES ARE CASE-SENSITIVE
+   ✅ Correct:   src="logos/msglow.png"
+   ❌ Wrong:     src="Logos/msglow.png"
+   
+3. FILE PATHS ARE RELATIVE
+   ✅ Correct:   <script src="image-slot.js">
+   ❌ Wrong:     <script src="/image-slot.js"> (absolute)
+   
+4. TOTAL SIZE
+   - HTML:       109 KB
+   - JS:         31 KB
+   - logos/:     14 MB
+   - uploads/:   ~25 MB
+   - TOTAL:      ~40 MB
+
+═══════════════════════════════════════════════════════════════════
+
+✅ VERIFICATION CHECKLIST:
+
+File/Folder                     Size      Status
+──────────────────────────────────────────────────
+Portfolio - Navy.html           109 KB    [ ]
+image-slot.js                   31 KB     [ ]
+logos/ (21 brands)              14 MB     [ ]
+uploads/ (all assets)           ~25 MB    [ ]
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 WHEN SETUP COMPLETE:
+
+Page 1 (Hero):
+  ✅ Ika's photo (right side)
+
+Page 6 (Brands):
+  ✅ LEFT column:   MS Glow, ERHA, Thomas Cook, J99 Corp, Roove, Sudo Brew, Mirai
+  ✅ CENTER column: NOAA, Sukkha Citta, Spice Mantra, Prastore, Privilege, Aunty Jis, Paletas
+  ✅ RIGHT column:  Sari Ater, Ada Fashion, DNY, Almona, Buti, Homewell, HWD
+  ✅ Scroll animation: LEFT tilt + CENTER up + RIGHT tilt
+
+Page 11 (Notable):
+  ✅ 5 notable brands
+
+═══════════════════════════════════════════════════════════════════

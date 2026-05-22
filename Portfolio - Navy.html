@@ -1,0 +1,2445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ika Maharani Ratri — Commercial Growth, Marketing Leader</title>
+<meta name="description" content="Commercial Growth and Marketing Leader with 9+ years across Indonesia and SEA. Strategic planning, brand activation, performance marketing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="image-slot.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<style>
+/* ─────────────────────────────────────────────────────────────────────────
+   DESIGN SYSTEM
+   Palette: deep navy + charcoal, cool slate text, ice paper, copper accent
+   Type:    Source Serif 4 (display) + IBM Plex Sans (UI) + IBM Plex Mono (data)
+   Tone:    rectilinear, hairline rules, monospace numerals, single warm accent
+   ───────────────────────────────────────────────────────────────────────── */
+:root {
+  /* Brand */
+  --navy-900: #08111F;     /* deepest, footer/hero */
+  --navy-800: #0E1A2D;
+  --navy-700: #142540;     /* primary dark surface */
+  --navy-600: #1C2F4F;
+  --navy-500: #2A4163;     /* hover/active on dark */
+  --navy-300: #5C7295;
+  --steel:    #4A6B8A;     /* mid blue, used sparingly */
+
+  /* Neutrals */
+  --ink:      #0A1320;     /* primary text on light */
+  --slate-700:#27374D;
+  --slate-500:#5C6F87;     /* secondary text */
+  --slate-400:#7A8DA6;
+  --slate-300:#A8B5C8;
+  --slate-200:#D1D9E3;     /* divider */
+  --slate-100:#E4EAF1;
+  --paper:    #F5F7FA;     /* primary background */
+  --paper-2:  #EDF1F6;     /* alt background */
+  --white:    #FFFFFF;
+
+  /* On-dark */
+  --ice:      #E8EEF6;     /* primary text on dark */
+  --ice-dim:  rgba(232,238,246,0.68);
+  --ice-mute: rgba(232,238,246,0.42);
+
+  /* Accent — copper, used sparingly for warmth */
+  --copper:   #B8956A;
+  --copper-2: #D3B188;
+  --copper-deep: #8A6B47;
+
+  /* Type scale */
+  --t-mega:    clamp(72px, 9vw, 132px);
+  --t-display: clamp(48px, 5.5vw, 84px);
+  --t-h1:      clamp(36px, 4vw, 56px);
+  --t-h2:      clamp(28px, 3vw, 40px);
+  --t-h3:      24px;
+  --t-body:    17px;
+  --t-small:   14px;
+  --t-eyebrow: 11px;
+
+  --serif: 'Source Serif 4', 'Times New Roman', serif;
+  --sans:  'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --mono:  'IBM Plex Mono', ui-monospace, monospace;
+
+  --transition: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  --maxw: 1240px;
+  --pad-x: clamp(24px, 5vw, 56px);
+}
+
+/* ─── Image slots ────────────────────────────────────────────────────────── */
+image-slot { display: block; }
+image-slot.portrait-slot { width: 100%; height: 100%; position: absolute; inset: 0; }
+image-slot.logo-slot { width: 100%; height: 100%; }
+
+.portrait, .contact-portrait { position: relative; }
+/* slot inside portrait shouldn't cover the copper corner accents */
+.portrait > image-slot, .contact-portrait > image-slot { z-index: 0; }
+.portrait::before, .portrait::after,
+.contact-portrait::before, .contact-portrait::after { z-index: 2; }
+
+/* tighten brand-cell so the slot fills the visual area */
+.brand-cell { padding: 16px; }
+.notable-card image-slot.logo-slot {
+  width: 96px; height: 44px;
+  margin: 0 auto 18px;
+}
+
+/* ─── Reset ────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--t-body);
+  line-height: 1.6;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; color: inherit; }
+::selection { background: var(--navy-700); color: var(--ice); }
+
+/* ── Typography utilities ────────────────────────────────────────────────── */
+.serif    { font-family: var(--serif); font-weight: 400; letter-spacing: -0.01em; }
+.mono     { font-family: var(--mono); }
+.t-mega   { font-family: var(--serif); font-size: var(--t-mega); font-weight: 300; line-height: 0.92; letter-spacing: -0.035em; }
+.t-display{ font-family: var(--serif); font-size: var(--t-display); font-weight: 300; line-height: 0.98; letter-spacing: -0.025em; }
+.t-h1     { font-family: var(--serif); font-size: var(--t-h1); font-weight: 400; line-height: 1.08; letter-spacing: -0.02em; }
+.t-h2     { font-family: var(--serif); font-size: var(--t-h2); font-weight: 400; line-height: 1.15; letter-spacing: -0.015em; }
+.t-h3     { font-family: var(--serif); font-size: var(--t-h3); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; }
+.italic   { font-style: italic; }
+
+/* Common pieces */
+.container { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad-x); }
+.eyebrow {
+  font-family: var(--mono);
+  font-size: var(--t-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+.eyebrow.on-light { color: var(--copper-deep); }
+.eyebrow-row {
+  display: flex; align-items: center; gap: 14px;
+  font-family: var(--mono);
+  font-size: var(--t-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--slate-500);
+}
+.eyebrow-row::before {
+  content: ''; width: 32px; height: 1px; background: var(--copper); display: inline-block;
+}
+.eyebrow-row.on-dark { color: var(--ice-dim); }
+.eyebrow-row.on-dark::before { background: var(--copper-2); }
+
+.section-head { margin-bottom: 64px; max-width: 760px; }
+.section-head .eyebrow-row { margin-bottom: 28px; }
+.section-head h2 { margin-bottom: 20px; }
+.section-lead {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--slate-500);
+  letter-spacing: -0.005em;
+}
+
+section { padding: 120px 0; position: relative; }
+
+/* Reveal */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+
+/* ─── NAV ────────────────────────────────────────────────────────────────── */
+nav.site {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 18px var(--pad-x);
+  display: flex; align-items: center; justify-content: space-between;
+  transition: background var(--transition), border-color var(--transition), padding var(--transition);
+  border-bottom: 1px solid transparent;
+}
+nav.site.scrolled {
+  background: rgba(245, 247, 250, 0.86);
+  backdrop-filter: saturate(1.6) blur(14px);
+  -webkit-backdrop-filter: saturate(1.6) blur(14px);
+  border-bottom-color: var(--slate-200);
+  padding-top: 14px; padding-bottom: 14px;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 12px;
+  font-family: var(--serif); font-size: 19px; font-weight: 500;
+  color: var(--ink); letter-spacing: -0.01em;
+}
+.nav-logo .mark {
+  width: 28px; height: 28px;
+  background: var(--navy-700);
+  display: grid; place-items: center;
+  color: var(--copper-2);
+  font-family: var(--mono); font-size: 12px; font-weight: 600;
+  letter-spacing: 0;
+}
+.nav-links { display: flex; gap: 32px; }
+.nav-links a {
+  font-family: var(--mono);
+  font-size: 12px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--slate-500);
+  transition: color 0.2s;
+  position: relative;
+  padding: 4px 0;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-links a:hover::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px; background: var(--copper);
+}
+.nav-cta {
+  background: var(--navy-700); color: var(--ice);
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  padding: 12px 22px;
+  border: 1px solid var(--navy-700);
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.nav-cta:hover { background: var(--navy-900); border-color: var(--navy-900); }
+
+/* ─── HERO ───────────────────────────────────────────────────────────────── */
+#hero {
+  min-height: 100vh;
+  padding: 0;
+  background: var(--paper);
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  position: relative;
+  overflow: hidden;
+}
+.hero-left {
+  background: var(--navy-900);
+  color: var(--ice);
+  padding: 140px clamp(40px, 5vw, 72px) 64px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.hero-left::before {
+  /* subtle navy grid texture */
+  content: ''; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+}
+.hero-left::after {
+  /* copper hairline accent down left edge */
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: linear-gradient(to bottom, transparent, var(--copper) 30%, var(--copper) 70%, transparent);
+}
+.hero-top { position: relative; z-index: 1; }
+.hero-meta {
+  display: flex; align-items: center; gap: 16px;
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ice-dim);
+  margin-bottom: 56px;
+}
+.hero-meta .dot { width: 6px; height: 6px; background: var(--copper); border-radius: 50%; }
+.hero-name {
+  font-family: var(--serif);
+  font-size: clamp(64px, 7vw, 112px);
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  color: var(--ice);
+  margin-bottom: 36px;
+}
+.hero-name .name-2 {
+  font-style: italic; font-weight: 400;
+  color: var(--copper-2);
+  display: block;
+}
+.hero-tagline {
+  font-family: var(--serif);
+  font-size: 22px; font-weight: 400; font-style: italic;
+  line-height: 1.45;
+  color: var(--ice-dim);
+  max-width: 480px;
+  margin-bottom: 48px;
+  letter-spacing: -0.005em;
+}
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 16px 28px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+.btn .arrow { display: inline-block; transition: transform 0.25s; }
+.btn:hover .arrow { transform: translateX(4px); }
+.btn-primary { background: var(--copper); color: var(--navy-900); border-color: var(--copper); }
+.btn-primary:hover { background: var(--copper-2); border-color: var(--copper-2); }
+.btn-ghost { border-color: rgba(232,238,246,0.3); color: var(--ice); }
+.btn-ghost:hover { border-color: var(--ice); background: rgba(232,238,246,0.06); }
+.btn-dark { background: var(--navy-700); color: var(--ice); border-color: var(--navy-700); }
+.btn-dark:hover { background: var(--navy-800); }
+
+.hero-bottom {
+  position: relative; z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0;
+  border-top: 1px solid rgba(232,238,246,0.12);
+  padding-top: 32px;
+  margin-top: 48px;
+}
+.hero-stat { padding-right: 40px; border-right: 1px solid rgba(232,238,246,0.08); }
+.hero-stat:last-child { border-right: none; padding-right: 0; }
+.hero-stat + .hero-stat { padding-left: 40px; }
+.hero-stat-num {
+  font-family: var(--serif); font-size: 36px; font-weight: 400;
+  color: var(--copper-2); line-height: 1; letter-spacing: -0.02em;
+  display: block; margin-bottom: 8px;
+}
+.hero-stat-label {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ice-mute);
+}
+
+.hero-right {
+  background: var(--paper-2);
+  padding: 140px clamp(40px, 5vw, 72px) 64px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.hero-right::before {
+  content: '';
+  position: absolute; inset: 80px clamp(40px, 5vw, 72px);
+  border: 1px solid var(--slate-200);
+  pointer-events: none;
+}
+.portrait {
+  width: 100%; max-width: 420px; aspect-ratio: 4/5;
+  background:
+    repeating-linear-gradient(135deg, transparent 0 12px, rgba(20,37,64,0.04) 12px 13px),
+    var(--slate-100);
+  border: 1px solid var(--slate-200);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 16px; padding: 32px;
+  position: relative;
+  z-index: 1;
+}
+.portrait::before {
+  content: ''; position: absolute; top: -1px; left: -1px;
+  width: 32px; height: 32px;
+  border-top: 2px solid var(--copper); border-left: 2px solid var(--copper);
+}
+.portrait::after {
+  content: ''; position: absolute; bottom: -1px; right: -1px;
+  width: 32px; height: 32px;
+  border-bottom: 2px solid var(--copper); border-right: 2px solid var(--copper);
+}
+.portrait-label {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--slate-400); text-align: center; line-height: 1.6;
+}
+.portrait-frame-tag {
+  position: absolute; top: 56px; left: clamp(56px, 6.5vw, 88px);
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--slate-400);
+}
+.portrait-frame-tag::before { content: '◇  '; color: var(--copper-deep); }
+
+/* ─── KPI STRIP ──────────────────────────────────────────────────────────── */
+#kpis {
+  background: var(--navy-900);
+  color: var(--ice);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+#kpis::before {
+  content: ''; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 80px 100%;
+}
+.kpi-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 56px; padding-bottom: 24px;
+  border-bottom: 1px solid rgba(232,238,246,0.12);
+  flex-wrap: wrap; gap: 16px;
+  position: relative;
+}
+.kpi-head h2 { color: var(--ice); font-size: clamp(28px, 3vw, 40px); }
+.kpi-head .index {
+  font-family: var(--mono); font-size: 12px;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--copper-2);
+}
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid rgba(232,238,246,0.12);
+  border-left: 1px solid rgba(232,238,246,0.12);
+  position: relative;
+}
+.kpi-card {
+  padding: 36px 28px 32px;
+  border-right: 1px solid rgba(232,238,246,0.12);
+  border-bottom: 1px solid rgba(232,238,246,0.12);
+  position: relative;
+  transition: background 0.3s;
+}
+.kpi-card:hover { background: rgba(232,238,246,0.03); }
+.kpi-card .kpi-tag {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ice-mute);
+  margin-bottom: 18px;
+}
+.kpi-number {
+  font-family: var(--serif); font-weight: 400;
+  font-size: 48px; line-height: 0.95;
+  color: var(--ice);
+  display: block;
+  letter-spacing: -0.025em;
+  margin-bottom: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.kpi-number.has-suffix sup {
+  font-size: 0.5em; vertical-align: top; color: var(--copper-2); margin-left: 2px;
+  font-weight: 400;
+}
+.kpi-label {
+  font-family: var(--sans); font-size: 13px; font-weight: 400;
+  color: var(--ice-dim);
+  line-height: 1.45;
+}
+
+/* ─── POSITIONING (FOCUS) ────────────────────────────────────────────────── */
+#positioning { padding: 140px 0 120px; }
+.positioning-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 80px;
+}
+.positioning-head {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 80px;
+  align-items: end;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--slate-200);
+}
+.positioning-head .left .eyebrow-row { margin-bottom: 32px; }
+.positioning-head .left .file-tag {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--slate-400);
+  letter-spacing: 0.14em; text-transform: uppercase;
+  margin-top: 24px;
+  display: flex; align-items: center; gap: 10px;
+}
+.positioning-head .left .file-tag .pill {
+  border: 1px solid var(--slate-200);
+  padding: 4px 10px;
+  color: var(--slate-500);
+}
+.positioning-head h2 {
+  font-size: clamp(40px, 4.5vw, 64px);
+  letter-spacing: -0.025em;
+  line-height: 1.02;
+}
+.positioning-head h2 em { font-style: italic; color: var(--copper-deep); font-weight: 400; }
+
+.positioning-body {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.positioning-body .copy { display: flex; flex-direction: column; gap: 22px; max-width: 580px; }
+.positioning-body p { color: var(--slate-700); line-height: 1.75; font-size: 17px; }
+.positioning-body p::first-line { letter-spacing: 0.01em; }
+.positioning-body .lead-p {
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1.45;
+  font-style: italic;
+  color: var(--ink);
+  border-left: 2px solid var(--copper);
+  padding-left: 22px;
+  margin-bottom: 8px;
+}
+
+.positioning-right {
+  position: sticky; top: 100px;
+}
+.pull-quote-card {
+  background: var(--navy-900);
+  color: var(--ice);
+  padding: 48px 40px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.pull-quote-card::before {
+  content: '“';
+  font-family: var(--serif);
+  position: absolute; top: -20px; left: 16px;
+  font-size: 180px; line-height: 1; color: var(--copper);
+  opacity: 0.5;
+  font-weight: 300;
+}
+.pull-quote-card .pq {
+  font-family: var(--serif);
+  font-size: 24px; line-height: 1.4; font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  position: relative; z-index: 1;
+  margin-bottom: 28px;
+}
+.pull-quote-card .pq-attr {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ice);
+  display: flex; align-items: center; gap: 12px;
+}
+.pull-quote-card .pq-attr::before { content: ''; width: 24px; height: 1px; background: var(--ice); }
+
+.signal-block {
+  border: 1px solid var(--slate-200);
+  padding: 28px;
+  background: var(--paper-2);
+}
+.signal-block h4 {
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--copper-deep);
+  margin-bottom: 20px;
+}
+.signal-row {
+  display: grid; grid-template-columns: 1fr auto; gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--slate-200);
+  align-items: baseline;
+}
+.signal-row:last-child { border-bottom: none; padding-bottom: 0; }
+.signal-row .label { font-size: 14px; color: var(--slate-700); }
+.signal-row .val { font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--ink); }
+
+/* ─── PHILOSOPHY ─────────────────────────────────────────────────────────── */
+#philosophy { background: var(--paper-2); padding: 120px 0; }
+.principle-list { display: flex; flex-direction: column; }
+.principle-item {
+  border-top: 1px solid var(--slate-200);
+  transition: background 0.3s;
+}
+.principle-item:last-child { border-bottom: 1px solid var(--slate-200); }
+.principle-item.active { background: var(--white); }
+.principle-header {
+  width: 100%;
+  padding: 32px 0;
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  align-items: center;
+  gap: 32px;
+  text-align: left;
+  cursor: pointer;
+  transition: padding 0.3s;
+}
+.principle-item.active .principle-header { padding: 36px 32px 24px; }
+.principle-num {
+  font-family: var(--mono); font-size: 12px; font-weight: 500;
+  letter-spacing: 0.18em; color: var(--copper-deep);
+}
+.principle-title {
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.3vw, 32px);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  transition: color 0.2s;
+}
+.principle-item:hover .principle-title { color: var(--navy-700); }
+.principle-chevron {
+  width: 36px; height: 36px;
+  border: 1px solid var(--slate-200);
+  display: grid; place-items: center;
+  color: var(--slate-500);
+  font-family: var(--mono); font-size: 14px;
+  transition: all 0.3s;
+}
+.principle-item.active .principle-chevron {
+  background: var(--navy-700); color: var(--copper-2); border-color: var(--navy-700);
+}
+.principle-chevron span { transition: transform 0.3s; display: inline-block; line-height: 1; }
+.principle-item.active .principle-chevron span { transform: rotate(45deg); }
+.principle-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.principle-item.active .principle-body { grid-template-rows: 1fr; }
+.principle-body > div { overflow: hidden; }
+.principle-content {
+  padding: 0 32px 36px 144px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.principle-content p {
+  font-size: 17px; line-height: 1.7;
+  color: var(--slate-700);
+  max-width: 620px;
+}
+.principle-evidence {
+  padding: 20px 24px;
+  background: var(--paper-2);
+  border-left: 2px solid var(--copper);
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--slate-700);
+}
+.principle-evidence .e-label {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--copper-deep);
+  display: block; margin-bottom: 8px;
+}
+
+/* ─── EXPERTISE (FOCUS) ──────────────────────────────────────────────────── */
+#expertise { background: var(--paper); padding: 140px 0; }
+.expertise-head {
+  display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 40px;
+  margin-bottom: 64px; padding-bottom: 28px; border-bottom: 1px solid var(--slate-200);
+}
+.expertise-head .right {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--slate-500);
+  display: flex; gap: 24px;
+}
+.expertise-head .right span strong { color: var(--ink); font-weight: 600; }
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--slate-200);
+  border: 1px solid var(--slate-200);
+}
+.exp-card {
+  background: var(--white);
+  padding: 48px 44px 44px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+  display: flex; flex-direction: column;
+  min-height: 380px;
+}
+.exp-card:hover { background: var(--paper-2); }
+.exp-card .exp-head {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--slate-200);
+}
+.exp-zone {
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--copper-deep);
+}
+.exp-number {
+  font-family: var(--serif); font-size: 56px; font-weight: 300;
+  line-height: 0.85;
+  color: var(--navy-700);
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+.exp-number sup {
+  font-family: var(--mono);
+  font-size: 11px; font-weight: 500;
+  color: var(--copper-deep);
+  letter-spacing: 0.1em;
+  vertical-align: top;
+  margin-left: 4px;
+}
+.exp-title {
+  font-family: var(--serif); font-size: 28px; font-weight: 500;
+  line-height: 1.15; letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 16px;
+  max-width: 24ch;
+}
+.exp-desc {
+  font-size: 15px; line-height: 1.65;
+  color: var(--slate-700);
+  margin-bottom: 32px;
+  max-width: 44ch;
+  flex-grow: 1;
+}
+.exp-foot {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--slate-200);
+}
+.exp-chip {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--slate-500);
+  padding: 5px 10px;
+  border: 1px solid var(--slate-200);
+  background: var(--paper);
+}
+.exp-chip.copper { color: var(--copper-deep); border-color: var(--copper); background: rgba(184,149,106,0.06); }
+
+/* ─── CASE STUDIES ───────────────────────────────────────────────────────── */
+#cases { background: var(--paper-2); padding: 120px 0; }
+.cases-tabs {
+  display: flex; flex-wrap: wrap; gap: 0;
+  margin-bottom: 56px;
+  border-bottom: 1px solid var(--slate-200);
+}
+.case-tab {
+  padding: 18px 22px;
+  font-family: var(--mono);
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--slate-500);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all 0.2s;
+  display: flex; align-items: center; gap: 10px;
+}
+.case-tab .idx { color: var(--slate-300); font-weight: 500; }
+.case-tab:hover { color: var(--ink); }
+.case-tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--copper);
+}
+.case-tab.active .idx { color: var(--copper-deep); }
+
+.case-panel { display: none; }
+.case-panel.active {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.case-header { margin-bottom: 32px; }
+.case-label {
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--copper-deep);
+  margin-bottom: 12px;
+}
+.case-title {
+  font-family: var(--serif); font-size: clamp(32px, 3.5vw, 44px);
+  font-weight: 400; letter-spacing: -0.02em; line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.case-context {
+  font-size: 15px; color: var(--slate-500);
+  font-family: var(--serif); font-style: italic;
+}
+.diag-flow {
+  display: flex; align-items: center; gap: 0; margin-bottom: 28px;
+  flex-wrap: wrap;
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+}
+.diag-step {
+  padding: 12px 16px;
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--slate-500);
+  border-right: 1px solid var(--slate-200);
+  flex: 1; text-align: center;
+}
+.diag-step:last-child { border-right: none; }
+.diag-step .num { color: var(--slate-300); margin-right: 6px; font-weight: 600; }
+.diag-step.is-key { background: var(--navy-700); color: var(--ice); }
+.diag-step.is-key .num { color: var(--copper-2); }
+
+.case-rows { display: flex; flex-direction: column; }
+.case-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  border-top: 1px solid var(--slate-200);
+}
+.case-row:last-child { border-bottom: 1px solid var(--slate-200); }
+.case-row-label {
+  padding: 18px 18px;
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--slate-500);
+  background: var(--white);
+  border-right: 1px solid var(--slate-200);
+}
+.case-row-label .step-no { color: var(--slate-300); display: block; margin-bottom: 4px; font-size: 9px; }
+.case-row.diagnosis .case-row-label { color: var(--copper-deep); background: rgba(184,149,106,0.06); }
+.case-row.result .case-row-label { color: var(--ice); background: var(--navy-700); border-right-color: var(--navy-700); }
+.case-row.result .case-row-label .step-no { color: var(--copper-2); }
+.case-row-content {
+  padding: 18px 24px;
+  font-size: 15px; line-height: 1.65;
+  color: var(--slate-700);
+  background: var(--white);
+}
+.case-row.diagnosis .case-row-content { background: rgba(184,149,106,0.04); color: var(--ink); }
+.case-row.result .case-row-content { background: var(--paper-2); color: var(--ink); font-weight: 500; }
+
+.case-stats {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+  background: var(--slate-200);
+  border: 1px solid var(--slate-200);
+}
+.case-stat-card {
+  background: var(--white);
+  padding: 36px 28px 32px;
+  position: relative;
+}
+.case-stat-card:nth-child(1), .case-stat-card:nth-child(4) {
+  background: var(--navy-900); color: var(--ice);
+}
+.case-stat-card:nth-child(1) .case-stat-label,
+.case-stat-card:nth-child(4) .case-stat-label { color: var(--ice-dim); }
+.case-stat-card:nth-child(1) .case-stat-number,
+.case-stat-card:nth-child(4) .case-stat-number { color: var(--copper-2); }
+.case-stat-tag {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--slate-400);
+  margin-bottom: 16px;
+}
+.case-stat-card:nth-child(1) .case-stat-tag,
+.case-stat-card:nth-child(4) .case-stat-tag { color: var(--copper-2); }
+.case-stat-number {
+  font-family: var(--serif); font-size: 44px; font-weight: 400;
+  line-height: 1; letter-spacing: -0.025em;
+  color: var(--ink);
+  display: block; margin-bottom: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.case-stat-label {
+  font-family: var(--sans); font-size: 12px;
+  color: var(--slate-500);
+  line-height: 1.4;
+}
+
+/* ─── TIKTOK CHART ───────────────────────────────────────────────────────── */
+#tiktok { background: var(--navy-900); color: var(--ice); padding: 120px 0; }
+.tiktok-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 80px; align-items: center; }
+.tiktok-grid .left h2 { color: var(--ice); margin: 16px 0 18px; font-size: clamp(40px, 4.5vw, 64px); }
+.tiktok-grid .left .tk-lead {
+  font-family: var(--serif); font-style: italic;
+  font-size: 22px; line-height: 1.45;
+  color: var(--ice-dim);
+  max-width: 480px;
+  margin-bottom: 40px;
+}
+.bar-chart-wrap {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(232,238,246,0.1);
+  padding: 36px 36px 72px;
+  position: relative;
+}
+.chart-meta {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(232,238,246,0.1);
+  margin-bottom: 36px;
+}
+.chart-meta .ctitle {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--copper-2);
+}
+.chart-meta .crange {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.12em; color: var(--ice-mute);
+}
+.bar-chart {
+  display: flex; align-items: flex-end; gap: 24px;
+  height: 280px;
+  position: relative;
+  border-bottom: 1px solid rgba(232,238,246,0.18);
+}
+.bar-chart::before {
+  /* y-axis dashed reference at 50% */
+  content: ''; position: absolute; left: 0; right: 0; top: 50%;
+  border-top: 1px dashed rgba(232,238,246,0.08);
+}
+.bar-wrap { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; position: relative; }
+.bar {
+  width: 100%;
+  background: var(--navy-600);
+  border-top: 2px solid var(--steel);
+  height: 0%;
+  transition: height 1.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  position: relative;
+}
+.bar.peak { background: var(--copper); border-top-color: var(--copper-2); }
+.bar-value {
+  position: absolute; bottom: calc(100% + 10px); left: 0; right: 0;
+  text-align: center;
+  font-family: var(--mono); font-size: 12px; font-weight: 500;
+  color: var(--ice); letter-spacing: 0.04em;
+}
+.bar.peak ~ .bar-value, .bar.peak .bar-value { color: var(--copper-2); }
+.bar-label {
+  position: absolute; bottom: -34px; left: 0; right: 0; text-align: center;
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  color: var(--ice-mute); letter-spacing: 0.16em; text-transform: uppercase;
+}
+.tk-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(232,238,246,0.1); border: 1px solid rgba(232,238,246,0.1); }
+.tk-stat-card { background: var(--navy-800); padding: 32px 28px; }
+.tk-stat-tag {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--copper-2);
+  margin-bottom: 14px;
+}
+.tk-stat-num {
+  font-family: var(--serif); font-size: 44px; font-weight: 400;
+  line-height: 1; color: var(--ice); letter-spacing: -0.025em;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 8px;
+}
+.tk-stat-lbl { font-size: 13px; color: var(--ice-dim); }
+
+/* ─── BRANDS ─────────────────────────────────────────────────────────────── */
+#brands { padding: 120px 0; background: var(--paper); perspective: 1800px; perspective-origin: 50% 30%; overflow: hidden; }
+.brand-stack {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+  max-width: 100%;
+  margin: 64px auto 0;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  padding: 0 var(--pad-x);
+}
+
+.brand-col {
+  flex: 1;
+  max-width: 280px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.brand-col.left { transform-origin: bottom left; }
+.brand-col.center { transform-origin: center; }
+.brand-col.right { transform-origin: bottom right; }
+
+.brand-row {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 24px;
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  transition: filter 0.4s ease;
+  list-style: none !important;
+}
+.brand-row:hover { filter: drop-shadow(0 30px 50px rgba(20, 37, 64, 0.28)); }
+
+.brand-row image-slot {
+  display: block !important;
+  width: 280px !important;
+  height: 280px !important;
+  margin: 0 auto !important;
+  transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), filter 0.4s ease;
+  filter: drop-shadow(0 8px 20px rgba(20, 37, 64, 0.08));
+  image-rendering: -webkit-optimize-contrast;
+  object-fit: contain;
+}
+/* When filled, optionally blend (white-bg PNG logos). SVG logos are usually transparent
+   already, so multiply is a no-op there. */
+.brand-row image-slot[data-filled] {
+  background: transparent !important;
+}
+.brand-row .b-name { display: none !important; }
+
+.brand-row:hover image-slot { transform: scale(1.06); filter: drop-shadow(0 30px 50px rgba(20, 37, 64, 0.28)); }
+
+.brand-stack:not(.show-empty) .brand-row:not(:has(image-slot[data-filled])) { display: none; }
+.brand-stack.show-empty .brand-row:not(:has(image-slot[data-filled])) { opacity: 0.55; }
+.brand-stack.show-empty .brand-row:not(:has(image-slot[data-filled])) .b-name { color: var(--copper-deep); }
+
+.brand-toggle-wrap { text-align: center; margin-top: 48px; }
+.brand-toggle {
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--slate-500);
+  padding: 12px 22px;
+  border: 1px solid var(--slate-200);
+  background: var(--white);
+  transition: all 0.2s;
+  display: inline-flex; align-items: center; gap: 10px;
+  cursor: pointer;
+}
+.brand-toggle:hover { color: var(--ink); border-color: var(--copper); }
+.brand-toggle .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--copper); }
+.brand-toggle .lbl-show, .brand-toggle .lbl-hide { display: none; }
+#brand-stack.show-empty ~ .brand-toggle-wrap .brand-toggle .lbl-hide { display: inline; }
+#brand-stack:not(.show-empty) ~ .brand-toggle-wrap .brand-toggle .lbl-show { display: inline; }
+
+/* ─── TOOLS ──────────────────────────────────────────────────────────────── */
+#tools { background: var(--paper-2); padding: 120px 0; }
+.tools-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--slate-200);
+  border: 1px solid var(--slate-200);
+}
+.tool-card { background: var(--white); padding: 40px 36px; }
+.tool-card .t-num {
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.18em; color: var(--copper-deep);
+  margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.tool-card .t-num::before { content: ''; width: 18px; height: 1px; background: var(--copper); }
+.tool-card .t-title {
+  font-family: var(--serif); font-size: 24px; font-weight: 500;
+  letter-spacing: -0.015em; line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.tool-card .t-desc {
+  font-size: 15px; line-height: 1.7; color: var(--slate-700);
+  margin-bottom: 24px;
+}
+.tool-card .t-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.t-tag {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--slate-500);
+  padding: 5px 10px;
+  border: 1px solid var(--slate-200);
+  background: var(--paper);
+}
+
+/* ─── ENGAGEMENT ─────────────────────────────────────────────────────────── */
+#engagement { padding: 120px 0; background: var(--paper); }
+.engagement-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.eng-card {
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  padding: 36px 32px;
+  display: flex; flex-direction: column;
+  position: relative;
+  transition: all 0.3s;
+}
+.eng-card:hover { background: var(--navy-900); color: var(--ice); border-color: var(--navy-900); transform: translateY(-2px); }
+.eng-card:hover .eng-num,
+.eng-card:hover .eng-title,
+.eng-card:hover .eng-desc { color: var(--ice); }
+.eng-card:hover .eng-num { color: var(--copper-2); }
+.eng-card:hover .eng-fit { color: var(--copper-2); border-color: rgba(184,149,106,0.4); }
+.eng-card:hover .eng-mark { color: rgba(232,238,246,0.04); }
+.eng-num {
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.18em; color: var(--copper-deep);
+  margin-bottom: 28px;
+  transition: color 0.3s;
+}
+.eng-title {
+  font-family: var(--serif); font-size: 26px; font-weight: 500;
+  letter-spacing: -0.015em; line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 16px;
+  transition: color 0.3s;
+}
+.eng-desc {
+  font-size: 14px; line-height: 1.65;
+  color: var(--slate-700);
+  margin-bottom: 28px;
+  transition: color 0.3s;
+}
+.eng-fit {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.08em;
+  padding-top: 20px;
+  border-top: 1px solid var(--slate-200);
+  color: var(--copper-deep);
+  line-height: 1.5;
+  transition: color 0.3s, border-color 0.3s;
+  margin-top: auto;
+}
+.eng-fit .label {
+  display: block; font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em;
+  margin-bottom: 8px; font-size: 10px;
+}
+.eng-mark {
+  position: absolute; bottom: 16px; right: 24px;
+  font-family: var(--serif); font-size: 110px; font-weight: 300;
+  line-height: 1; color: var(--slate-100);
+  user-select: none; pointer-events: none;
+  transition: color 0.3s;
+}
+
+/* ─── NOTABLE ────────────────────────────────────────────────────────────── */
+#notable { background: var(--navy-900); color: var(--ice); padding: 100px 0; }
+.notable-head {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.notable-head .eyebrow-row { justify-content: center; }
+.notable-head .eyebrow-row::before { display: none; }
+.notable-head h2 { color: var(--ice); margin-top: 14px; }
+.notable-grid {
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid rgba(232,238,246,0.1);
+  border-left: 1px solid rgba(232,238,246,0.1);
+}
+.notable-card {
+  padding: 36px 24px;
+  border-right: 1px solid rgba(232,238,246,0.1);
+  border-bottom: 1px solid rgba(232,238,246,0.1);
+  text-align: center;
+  transition: background 0.3s;
+}
+.notable-card:hover { background: rgba(232,238,246,0.04); }
+.notable-logo-ph {
+  width: 80px; height: 36px;
+  border: 1px dashed rgba(232,238,246,0.2);
+  margin: 0 auto 20px;
+  display: grid; place-items: center;
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.12em; color: var(--ice-mute);
+}
+.notable-brand {
+  font-family: var(--serif); font-size: 18px; font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--ice); margin-bottom: 8px;
+}
+.notable-role {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.14em; color: var(--copper-2);
+  line-height: 1.5;
+}
+
+/* ─── PROCESS ────────────────────────────────────────────────────────────── */
+#process { padding: 120px 0; background: var(--paper-2); }
+.process-steps {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+  margin-top: 56px;
+  border-top: 1px solid var(--slate-200);
+  border-bottom: 1px solid var(--slate-200);
+}
+.process-step {
+  padding: 48px 36px;
+  border-right: 1px solid var(--slate-200);
+  position: relative;
+}
+.process-step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.2em; color: var(--copper-deep);
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 32px;
+}
+.step-num .glyph {
+  width: 40px; height: 40px;
+  border: 1px solid var(--copper);
+  display: grid; place-items: center;
+  font-family: var(--serif); font-size: 18px; font-weight: 400;
+  color: var(--navy-700);
+  letter-spacing: 0;
+}
+.step-title {
+  font-family: var(--serif); font-size: 24px; font-weight: 500;
+  letter-spacing: -0.015em; line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+.step-desc { font-size: 15px; line-height: 1.65; color: var(--slate-700); max-width: 36ch; }
+.step-meta {
+  margin-top: 24px;
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--slate-500);
+  padding-top: 16px;
+  border-top: 1px dashed var(--slate-200);
+}
+
+/* ─── CONTACT (FOCUS) ────────────────────────────────────────────────────── */
+#contact {
+  background: var(--navy-900);
+  color: var(--ice);
+  padding: 140px 0;
+  position: relative;
+  overflow: hidden;
+}
+#contact::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+}
+.contact-wrap { position: relative; z-index: 1; }
+.contact-meta {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(232,238,246,0.12);
+  margin-bottom: 64px;
+  flex-wrap: wrap; gap: 16px;
+}
+.contact-meta .left, .contact-meta .right {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--copper-2);
+}
+.contact-meta .left { display: flex; align-items: center; gap: 12px; }
+.contact-meta .pulse {
+  width: 8px; height: 8px; background: var(--copper); border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(184,149,106,0.6);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(184,149,106,0.5); }
+  50%      { box-shadow: 0 0 0 8px rgba(184,149,106,0); }
+}
+.contact-grid {
+  display: grid; grid-template-columns: 1.3fr 1fr; gap: 96px;
+  align-items: start;
+}
+.contact-statement {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 72px);
+  font-weight: 300;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  color: var(--ice);
+  margin-bottom: 32px;
+}
+.contact-statement em {
+  font-style: italic; font-weight: 400;
+  color: var(--copper-2);
+}
+.contact-sub {
+  font-family: var(--serif); font-size: 20px; font-style: italic;
+  line-height: 1.5; color: var(--ice-dim);
+  max-width: 460px;
+  margin-bottom: 48px;
+}
+.contact-items {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+  background: rgba(232,238,246,0.1);
+  border: 1px solid rgba(232,238,246,0.1);
+  margin-bottom: 32px;
+}
+.contact-item {
+  background: var(--navy-800);
+  padding: 24px;
+  display: flex; flex-direction: column; gap: 8px;
+  transition: background 0.2s;
+}
+.contact-item:hover { background: var(--navy-700); }
+.contact-item-label {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ice-mute);
+}
+.contact-item-value {
+  font-family: var(--serif); font-size: 17px;
+  color: var(--ice);
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+  word-break: break-word;
+}
+.contact-availability {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 20px 24px;
+  background: rgba(184,149,106,0.08);
+  border-left: 2px solid var(--copper);
+  font-size: 14px; line-height: 1.55;
+  color: var(--ice);
+  margin-bottom: 40px;
+}
+.contact-availability .av-tag {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--copper-2);
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.contact-card-right {
+  position: relative;
+  padding-top: 8px;
+}
+.contact-portrait {
+  width: 100%; aspect-ratio: 4/5;
+  background:
+    repeating-linear-gradient(135deg, transparent 0 14px, rgba(232,238,246,0.04) 14px 15px),
+    rgba(232,238,246,0.04);
+  border: 1px solid rgba(232,238,246,0.16);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 16px;
+  position: relative;
+}
+.contact-portrait::before, .contact-portrait::after {
+  content: ''; position: absolute; width: 36px; height: 36px;
+}
+.contact-portrait::before { top: -1px; left: -1px; border-top: 2px solid var(--copper); border-left: 2px solid var(--copper); }
+.contact-portrait::after { bottom: -1px; right: -1px; border-bottom: 2px solid var(--copper); border-right: 2px solid var(--copper); }
+.cp-label {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ice-mute);
+  text-align: center;
+  line-height: 1.7;
+}
+.contact-vcard {
+  margin-top: 16px;
+  border: 1px solid rgba(232,238,246,0.16);
+  padding: 20px 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--ice-dim);
+}
+.contact-vcard .ic { color: var(--copper-2); }
+
+/* ─── FOOTER ─────────────────────────────────────────────────────────────── */
+footer {
+  background: var(--navy-900);
+  padding: 36px 0;
+  border-top: 1px solid rgba(232,238,246,0.08);
+}
+.footer-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; flex-wrap: wrap;
+}
+.footer-name {
+  font-family: var(--serif); font-size: 17px; font-weight: 500;
+  color: var(--ice); letter-spacing: -0.01em;
+}
+.footer-links { display: flex; gap: 24px; }
+.footer-links a {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--ice-mute);
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--copper-2); }
+.footer-copy {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--ice-mute);
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--paper-2); }
+::-webkit-scrollbar-thumb { background: var(--navy-700); }
+
+/* ─── Mobile ─────────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+  .notable-grid { grid-template-columns: repeat(3, 1fr); }
+  .expertise-grid { grid-template-columns: 1fr; }
+  .case-panel.active { grid-template-columns: 1fr; gap: 40px; }
+  .positioning-head, .positioning-body, .tiktok-grid, .contact-grid {
+    grid-template-columns: 1fr; gap: 40px;
+  }
+  .positioning-right { position: static; }
+  .engagement-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr; }
+  .process-step { border-right: none; border-bottom: 1px solid var(--slate-200); }
+  .process-step:last-child { border-bottom: none; }
+  .brand-stack { gap: 24px; }
+  .brand-col { max-width: 240px; }
+  .brand-row image-slot { width: 220px !important; height: 220px !important; }
+}
+@media (max-width: 720px) {
+  nav.site { padding: 14px 24px; }
+  .nav-links { display: none; }
+  #hero { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .hero-left { padding: 120px 32px 56px; min-height: 100vh; }
+  .hero-bottom { grid-template-columns: 1fr 1fr; }
+  .hero-stat { padding-right: 16px; }
+  .hero-stat + .hero-stat { padding-left: 16px; }
+  .kpi-grid { grid-template-columns: 1fr 1fr; }
+  .notable-grid { grid-template-columns: 1fr 1fr; }
+  .tools-grid { grid-template-columns: 1fr; }
+  .case-stats { grid-template-columns: 1fr 1fr; }
+  .brand-stack { flex-direction: column; gap: 16px; align-items: center; }
+  .brand-col { max-width: 100%; }
+  .brand-col.left, .brand-col.center, .brand-col.right { transform: none !important; }
+  .brand-row { transform: none !important; }
+  .brand-row image-slot { width: 180px !important; height: 180px !important; filter: drop-shadow(0 4px 12px rgba(20, 37, 64, 0.08)); }
+  .contact-items { grid-template-columns: 1fr; }
+  .principle-content { grid-template-columns: 1fr; padding: 0 24px 32px 24px; }
+  .principle-item.active .principle-header { padding: 28px 24px 16px; }
+  .principle-header { padding: 24px 0; grid-template-columns: 60px 1fr auto; gap: 16px; }
+  .case-row { grid-template-columns: 100px 1fr; }
+  section { padding: 80px 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site" id="main-nav">
+  <a href="#hero" class="nav-logo">
+    <span class="mark">IM</span>
+    Ika Maharani Ratri
+  </a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-top">
+      <div class="hero-meta">
+        <span class="dot"></span>
+        <span>Indonesia · SEA · Remote</span>
+        <span style="color:var(--ice-mute);">/</span>
+        <span>Est. 2016</span>
+      </div>
+      <h1 class="hero-name">
+        Ika<br>
+        <span class="name-2">Maharani</span>
+        Ratri
+      </h1>
+      <p class="hero-tagline">
+        I build marketing organisations that produce measurable revenue outcomes, not just campaigns. Nine years across Indonesia's most demanding multi-brand environments.
+      </p>
+    </div>
+    <div class="hero-bottom">
+      <div class="hero-stat">
+        <span class="hero-stat-num">9+</span>
+        <span class="hero-stat-label">Years Experience</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">IDR&nbsp;3B+</span>
+        <span class="hero-stat-label">Ad Budget Directed</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">26</span>
+        <span class="hero-stat-label">Cities Activated</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="portrait-frame-tag">Portrait · 01</div>
+    <div class="portrait">
+      <image-slot id="hero-portrait" class="portrait-slot" shape="rect" src="uploads/Hero ika.jpg" placeholder="Drop foto Ika · 4:5"></image-slot>
+    </div>
+  </div>
+</section>
+
+<!-- KPIs -->
+<section id="kpis">
+  <div class="container">
+    <div class="kpi-head">
+      <h2 class="t-h2">Career Impact, at a Glance</h2>
+      <span class="index">§ 01</span>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi-card reveal">
+        <div class="kpi-tag">01 · Tenure</div>
+        <span class="kpi-number has-suffix">9<sup>+</sup></span>
+        <div class="kpi-label">Years marketing leadership</div>
+      </div>
+      <div class="kpi-card reveal reveal-delay-1">
+        <div class="kpi-tag">02 · Portfolio</div>
+        <span class="kpi-number">9 <span style="color:var(--copper-2);font-size:0.55em;letter-spacing:0.04em;">SBUs</span></span>
+        <div class="kpi-label">Current group oversight</div>
+      </div>
+      <div class="kpi-card reveal reveal-delay-2">
+        <div class="kpi-tag">03 · Budget</div>
+        <span class="kpi-number">IDR 3B<sup style="color:var(--copper-2);font-size:0.45em;">+</sup></span>
+        <div class="kpi-label">Ad spend directed</div>
+      </div>
+      <div class="kpi-card reveal reveal-delay-3">
+        <div class="kpi-tag">04 · Teams</div>
+        <span class="kpi-number has-suffix">45<sup>+</sup></span>
+        <div class="kpi-label">Professionals led</div>
+      </div>
+      <div class="kpi-card reveal reveal-delay-4">
+        <div class="kpi-tag">05 · Clients</div>
+        <span class="kpi-number">14</span>
+        <div class="kpi-label">Concurrent active accounts</div>
+      </div>
+      <div class="kpi-card reveal">
+        <div class="kpi-tag">06 · Leads</div>
+        <span class="kpi-number">500<sup style="color:var(--copper-2);font-size:0.45em;">+</sup></span>
+        <div class="kpi-label">Qualified leads / day</div>
+      </div>
+      <div class="kpi-card reveal reveal-delay-1">
+        <div class="kpi-tag">07 · Conversion</div>
+        <span class="kpi-number">85<sup style="color:var(--copper-2);font-size:0.45em;">%</sup></span>
+        <div class="kpi-label">Lead-to-client CVR</div>
+      </div>
+      <div class="kpi-card reveal reveal-delay-2">
+        <div class="kpi-tag">08 · ROI</div>
+        <span class="kpi-number">28<sup style="color:var(--copper-2);font-size:0.45em;">%</sup></span>
+        <div class="kpi-label">Avg improvement</div>
+      </div>
+      <div class="kpi-card reveal reveal-delay-3">
+        <div class="kpi-tag">09 · Reach</div>
+        <span class="kpi-number">26</span>
+        <div class="kpi-label">Cities activated</div>
+      </div>
+      <div class="kpi-card reveal reveal-delay-4">
+        <div class="kpi-tag">10 · Records</div>
+        <span class="kpi-number">2<span style="color:var(--copper-2);font-size:0.55em;letter-spacing:0;">×</span></span>
+        <div class="kpi-label">MURI national records</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POSITIONING (FOCUS) -->
+<section id="positioning">
+  <div class="container">
+    <div class="positioning-wrap">
+
+      <div class="positioning-head">
+        <div class="left reveal">
+          <div class="eyebrow-row">§ 02</div>
+          <div class="file-tag">
+            <span class="pill">
+</span>
+            <span>Maharani / Bali, ID</span>
+          </div>
+        </div>
+        <div class="right reveal reveal-delay-1">
+          <h2 class="t-h1">Commercial Growth, <em>Marketing Leader</em>.</h2>
+        </div>
+      </div>
+
+      <div class="positioning-body">
+        <div class="copy reveal">
+          <p class="lead-p">Marketing organisations at their best operate as commercial engines, where strategy, execution, and financial discipline work together to produce measurable growth, not just visible activity.</p>
+          <p>This is the standard I hold myself to across every engagement.</p>
+          <p>Over 9+ years I have built marketing functions from the ground up, sustained them under severe resource constraints, negotiated executive partnerships with national-scale brands, and directed multi-billion rupiah campaign portfolios across Indonesia's most demanding multi-brand environments.</p>
+          <p>I combine strategic planning rigour with hands-on execution and financial governance. I am available for corporate marketing leadership, remote director mandates, and advisory engagements where integrated commercial thinking and a demonstrable track record are genuinely valued.</p>
+        </div>
+
+        <aside class="positioning-right reveal reveal-delay-2">
+          <div class="pull-quote-card" style="background-color: rgb(8, 20, 39)">
+            <p class="pq">
+
+
+</p>
+            <div class="pq-attr">Marketing
+MARKETING LEADER IKA MAHARANI RATRI</div>
+          </div>
+          <div class="signal-block">
+            <h4>At a Glance</h4>
+            <div class="signal-row"><span class="label">Based</span><span class="val">Bali, Indonesia</span></div>
+            <div class="signal-row"><span class="label">Languages</span><span class="val">EN · ID</span></div>
+            <div class="signal-row"><span class="label">Tenure</span><span class="val">9+ Years</span></div>
+            <div class="signal-row"><span class="label">Largest portfolio</span><span class="val">IDR 1.5B / mo</span></div>
+            <div class="signal-row"><span class="label">Availability</span><span class="val" style="color:var(--copper-deep);">Open</span></div>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow-row">§ 03</div>
+      <h2 class="t-h1">Five principles. One standard.</h2>
+      <p class="section-lead">Five principles govern every engagement. Each is backed by a specific commercial outcome, not a management theory.</p>
+    </div>
+
+    <div class="principle-list reveal">
+
+      <div class="principle-item">
+        <button class="principle-header" onclick="togglePrinciple(this)">
+          <span class="principle-num">01 / 05</span>
+          <span class="principle-title">Diagnosis Before Execution</span>
+          <span class="principle-chevron"><span>+</span></span>
+        </button>
+        <div class="principle-body"><div>
+          <div class="principle-content">
+            <p>Most marketing problems are misdiagnosed before the first campaign goes live. The issue is rarely creative quality. It is usually a broken funnel, wrong audience definition, or a commercial target that was never clearly set. I diagnose before I recommend. The brief follows the diagnosis, not the other way around.</p>
+            <div class="principle-evidence">
+              <span class="e-label">Evidence · RTI Group</span>
+              Rebuilt KPI structures and lead qualification logic before scaling IDR 1.5B/month spend, resulting in 500+ qualified leads per day and 28% ROI improvement.
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="principle-item">
+        <button class="principle-header" onclick="togglePrinciple(this)">
+          <span class="principle-num">02 / 05</span>
+          <span class="principle-title">Marketing Is a Revenue Function, Not a Cost Centre</span>
+          <span class="principle-chevron"><span>+</span></span>
+        </button>
+        <div class="principle-body"><div>
+          <div class="principle-content">
+            <p>Every marketing decision is filtered through one question: does this move a commercial number? Brand awareness only matters if it feeds a conversion pipeline. I build teams and reporting systems that speak the language of finance, not just campaign dashboards.</p>
+            <div class="principle-evidence">
+              <span class="e-label">Evidence · Kado Bajo Group</span>
+              Marketing spend realigned monthly against P&amp;L performance across 9 SBUs on IDR 300-400M annual budget. Direct Finance and Operations collaboration.
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="principle-item">
+        <button class="principle-header" onclick="togglePrinciple(this)">
+          <span class="principle-num">03 / 05</span>
+          <span class="principle-title">Sustainability Over Scale</span>
+          <span class="principle-chevron"><span>+</span></span>
+        </button>
+        <div class="principle-body"><div>
+          <div class="principle-content">
+            <p>Scaling a marketing operation is easy. Scaling it without breaking the commercial model is hard. I build systems that work at current size and extend cleanly as the business grows, rather than systems that require capital injections to maintain.</p>
+            <div class="principle-evidence">
+              <span class="e-label">Evidence · Privilege Creative Agency</span>
+              14 active clients, 13 staff, less than 10% of planned capital, reached break-even through operational discipline alone.
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="principle-item">
+        <button class="principle-header" onclick="togglePrinciple(this)">
+          <span class="principle-num">04 / 05</span>
+          <span class="principle-title">Partnerships Are Built, Not Bought</span>
+          <span class="principle-chevron"><span>+</span></span>
+        </button>
+        <div class="principle-body"><div>
+          <div class="principle-content">
+            <p>The best influencer deal is not the one with the biggest reach. It is the one where the creator fits the brand, the terms protect the business, and the relationship deepens over time. I treat KOL and brand partnerships as long-term commercial relationships requiring negotiation, cultural intelligence, and performance management.</p>
+            <div class="principle-evidence">
+              <span class="e-label">Evidence · MS Glow</span>
+              Executive partnership personally negotiated and sustained across 4 major national campaigns and multiple subsequent years.
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="principle-item">
+        <button class="principle-header" onclick="togglePrinciple(this)">
+          <span class="principle-num">05 / 05</span>
+          <span class="principle-title">Infrastructure Enables Creativity</span>
+          <span class="principle-chevron"><span>+</span></span>
+        </button>
+        <div class="principle-body"><div>
+          <div class="principle-content">
+            <p>Creative campaigns fail consistently when the backend is not built. No CRM, no lead tracking, no reporting cadence. I invest in the operational infrastructure that allows creative campaigns to actually convert. The dashboard is as important as the brief.</p>
+            <div class="principle-evidence">
+              <span class="e-label">Evidence · Systems</span>
+              35% reporting efficiency gain at RTI Group. Custom CRM workflow built at Kado Bajo. AI-certified practitioner, ChatGPT, Claude, Jasper AI, 2026.
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE (FOCUS) -->
+<section id="expertise">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow-row">§ 04</div>
+      <h2 class="t-h1">Four zones of <em style="font-style:italic;color:var(--copper-deep);">built</em> expertise.</h2>
+      <p class="section-lead">Not surface familiarity. Years of commercial accountability and measurable outcomes in each zone.</p>
+    </div>
+
+    <div class="expertise-head reveal">
+      <div></div>
+      <div class="right">
+        <span>Zones <strong>01 — 04</strong></span>
+        <span>Status <strong>Operational</strong></span>
+      </div>
+    </div>
+
+    <div class="expertise-grid reveal">
+
+      <div class="exp-card">
+        <div class="exp-head">
+          <div>
+            <div class="exp-zone">Zone 01 / Direction</div>
+          </div>
+          <div class="exp-number">01<sup>↗</sup></div>
+        </div>
+        <div class="exp-title">Integrated Campaign Architecture</div>
+        <div class="exp-desc">Directing multi-channel campaigns at scale. IDR 1.5B+ monthly portfolios, 30-person teams, 9 SBUs simultaneously. National to local scope.</div>
+        <div class="exp-foot">
+          <span class="exp-chip copper">IDR 1.5B / mo</span>
+          <span class="exp-chip">30-person team</span>
+          <span class="exp-chip">9 SBUs</span>
+          <span class="exp-chip">Meta · TikTok · Google</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-head">
+          <div>
+            <div class="exp-zone">Zone 02 / Activation</div>
+          </div>
+          <div class="exp-number">02<sup>↗</sup></div>
+        </div>
+        <div class="exp-title">Brand Activation, Experiential Design</div>
+        <div class="exp-desc">Campaigns beyond paid media. 26-city national activation, 6,500+ distributions, MURI national records. Field, PR, and influencer integration.</div>
+        <div class="exp-foot">
+          <span class="exp-chip copper">26 cities</span>
+          <span class="exp-chip">6,500+ distributions</span>
+          <span class="exp-chip">2× MURI records</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-head">
+          <div>
+            <div class="exp-zone">Zone 03 / Partnership</div>
+          </div>
+          <div class="exp-number">03<sup>↗</sup></div>
+        </div>
+        <div class="exp-title">KOL, Partnership Development</div>
+        <div class="exp-desc">Commercial creator and brand relationships. MS Glow executive partnership negotiated and sustained across 4 major campaigns and multiple years.</div>
+        <div class="exp-foot">
+          <span class="exp-chip copper">MS Glow exec partner</span>
+          <span class="exp-chip">4 national campaigns</span>
+          <span class="exp-chip">Multi-year retained</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-head">
+          <div>
+            <div class="exp-zone">Zone 04 / Systems</div>
+          </div>
+          <div class="exp-number">04<sup>↗</sup></div>
+        </div>
+        <div class="exp-title">Marketing Operations, AI Workflows</div>
+        <div class="exp-desc">CRM, dashboards, reporting systems. 35% efficiency gain via automation. Certified practitioner, ChatGPT, Claude, Jasper AI, Coursiv 2026.</div>
+        <div class="exp-foot">
+          <span class="exp-chip copper">35% efficiency</span>
+          <span class="exp-chip">Custom CRM</span>
+          <span class="exp-chip">AI Certified 2026</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="cases">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow-row">§ 05</div>
+      <h2 class="t-h1">Six diagnostic narratives.</h2>
+      <p class="section-lead">Each follows the same structure: Context, Challenge, Diagnosis, Approach, Result. The diagnosis is the most important part.</p>
+    </div>
+
+    <div class="cases-tabs reveal">
+      <button class="case-tab active" onclick="switchCase(this,'cs1')"><span class="idx">01</span> TikTok Revenue</button>
+      <button class="case-tab" onclick="switchCase(this,'cs2')"><span class="idx">02</span> RTI Group</button>
+      <button class="case-tab" onclick="switchCase(this,'cs3')"><span class="idx">03</span> MS Glow</button>
+      <button class="case-tab" onclick="switchCase(this,'cs4')"><span class="idx">04</span> MURI 26 Cities</button>
+      <button class="case-tab" onclick="switchCase(this,'cs5')"><span class="idx">05</span> Privilege Agency</button>
+      <button class="case-tab" onclick="switchCase(this,'cs6')"><span class="idx">06</span> Kado Bajo</button>
+    </div>
+
+    <!-- CS1 -->
+    <div class="case-panel active" id="cs1">
+      <div>
+        <div class="case-header">
+          <div class="case-label">Case Study 01 · E-Commerce · TikTok Shop</div>
+          <div class="case-title">TikTok Shop Revenue Growth</div>
+          <div class="case-context">Performance marketing, 6-month growth arc</div>
+        </div>
+        <div class="diag-flow">
+          <div class="diag-step"><span class="num">01</span>Context</div>
+          <div class="diag-step"><span class="num">02</span>Challenge</div>
+          <div class="diag-step is-key"><span class="num">03</span>Diagnosis</div>
+          <div class="diag-step"><span class="num">04</span>Approach</div>
+          <div class="diag-step"><span class="num">05</span>Result</div>
+        </div>
+        <div class="case-rows">
+          <div class="case-row"><div class="case-row-label"><span class="step-no">01</span>Context</div><div class="case-row-content">E-commerce performance marketing via TikTok Shop. Full responsibility for paid media, content-to-conversion strategy, and live commerce optimisation across a growing product portfolio.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">02</span>Challenge</div><div class="case-row-content">Building consistent revenue growth through TikTok Shop while maintaining lead quality and scaling efficiently without proportional increases in ad spend.</div></div>
+          <div class="case-row diagnosis"><div class="case-row-label"><span class="step-no">03</span>Diagnosis</div><div class="case-row-content">The growth lever was not spend volume. It was conversion architecture. Optimising the relationship between live commerce, product placement, and audience retargeting produced compounding returns at each stage.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">04</span>Approach</div><div class="case-row-content">Structured a full-funnel TikTok performance system: paid acquisition into live commerce events, retargeting warm audiences, and systematic creative iteration every 10-14 days. Tracked buyer quality, not just order volume.</div></div>
+          <div class="case-row result"><div class="case-row-label"><span class="step-no">05</span>Result</div><div class="case-row-content">Revenue grew 4.7× in 6 months: February Rp644M, March Rp1.3B, June Rp1.8B, July Rp3.0B. Buyer count grew 679%, from 1,734 to 13,295. Order volume grew from 2,098 to 16,160.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="case-stats">
+          <div class="case-stat-card"><div class="case-stat-tag">Revenue ↗</div><span class="case-stat-number">4.7×</span><span class="case-stat-label">Growth in 6 months</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Buyers ↗</div><span class="case-stat-number">679%</span><span class="case-stat-label">Buyer base expansion</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Peak orders</div><span class="case-stat-number">16,160</span><span class="case-stat-label">Per month</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Period</div><span class="case-stat-number">6 mo</span><span class="case-stat-label">Feb → Jul</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CS2 -->
+    <div class="case-panel" id="cs2">
+      <div>
+        <div class="case-header">
+          <div class="case-label">Case Study 02 · RTI Group · 2021–2023</div>
+          <div class="case-title">Portfolio Governance at Scale</div>
+          <div class="case-context">Multi-industry growth group, 30-person team, IDR 1.5B monthly ad portfolio</div>
+        </div>
+        <div class="diag-flow">
+          <div class="diag-step"><span class="num">01</span>Context</div>
+          <div class="diag-step"><span class="num">02</span>Challenge</div>
+          <div class="diag-step is-key"><span class="num">03</span>Diagnosis</div>
+          <div class="diag-step"><span class="num">04</span>Approach</div>
+          <div class="diag-step"><span class="num">05</span>Result</div>
+        </div>
+        <div class="case-rows">
+          <div class="case-row"><div class="case-row-label"><span class="step-no">01</span>Context</div><div class="case-row-content">Digital marketing division with monthly advertising portfolios exceeding IDR 1.5 billion across Meta, TikTok, Google, and influencer-integrated channels. 30-person cross-functional team.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">02</span>Challenge</div><div class="case-row-content">High-spend portfolio with inconsistent lead quality, unclear KPI ownership across the team, and no real-time ROI visibility across channels simultaneously.</div></div>
+          <div class="case-row diagnosis"><div class="case-row-label"><span class="step-no">03</span>Diagnosis</div><div class="case-row-content">Volume was being optimised without defining what a qualified lead meant commercially. A qualification gap, not a budget or creative problem.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">04</span>Approach</div><div class="case-row-content">Rebuilt KPI framework from commercial objective backwards. Introduced structured team accountability with weekly performance cadences. Built automated dashboards for daily spend efficiency visibility by channel.</div></div>
+          <div class="case-row result"><div class="case-row-label"><span class="step-no">05</span>Result</div><div class="case-row-content">500+ qualified leads per day consistently delivered. 28% average ROI improvement. 35% reduction in manual reporting overhead through automated dashboard infrastructure.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="case-stats">
+          <div class="case-stat-card"><div class="case-stat-tag">Leads / day</div><span class="case-stat-number">500+</span><span class="case-stat-label">Qualified, consistent</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">ROI ↗</div><span class="case-stat-number">28%</span><span class="case-stat-label">Average improvement</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Efficiency</div><span class="case-stat-number">35%</span><span class="case-stat-label">Reporting overhead cut</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Portfolio</div><span class="case-stat-number">1.5B</span><span class="case-stat-label">IDR / month directed</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CS3 -->
+    <div class="case-panel" id="cs3">
+      <div>
+        <div class="case-header">
+          <div class="case-label">Case Study 03 · KECE Entertainment · 2018–2020</div>
+          <div class="case-title">MS Glow Executive Partnership</div>
+          <div class="case-context">National consumer beauty market, multi-year engagement</div>
+        </div>
+        <div class="diag-flow">
+          <div class="diag-step"><span class="num">01</span>Context</div>
+          <div class="diag-step"><span class="num">02</span>Challenge</div>
+          <div class="diag-step is-key"><span class="num">03</span>Diagnosis</div>
+          <div class="diag-step"><span class="num">04</span>Approach</div>
+          <div class="diag-step"><span class="num">05</span>Result</div>
+        </div>
+        <div class="case-rows">
+          <div class="case-row"><div class="case-row-label"><span class="step-no">01</span>Context</div><div class="case-row-content">MS Glow is one of Indonesia's largest consumer beauty brands with significant marketing spend and an established agency ecosystem. Engagement initiated from cold outreach.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">02</span>Challenge</div><div class="case-row-content">Securing and sustaining a partnership with a national-scale brand required demonstrating specific strategic and executional value, not just availability or cost competitiveness.</div></div>
+          <div class="case-row diagnosis"><div class="case-row-label"><span class="step-no">03</span>Diagnosis</div><div class="case-row-content">MS Glow needed a partner who understood Indonesian consumer culture at the activation level: field presence, KOL ecosystem management, and national-scale brand consistency.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">04</span>Approach</div><div class="case-row-content">Structured value proposition around activation capability and KOL discipline. Personally negotiated commercial terms and usage rights. Designed first campaign as proof of capability before proposing a longer engagement.</div></div>
+          <div class="case-row result"><div class="case-row-label"><span class="step-no">05</span>Result</div><div class="case-row-content">Long-term executive partnership secured. 4 major national campaigns directed. Partnership sustained across multiple subsequent years, the clearest commercial signal that the relationship delivered consistent value.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="case-stats">
+          <div class="case-stat-card"><div class="case-stat-tag">Campaigns</div><span class="case-stat-number">4</span><span class="case-stat-label">Major national, directed</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Tenure</div><span class="case-stat-number">Multi-yr</span><span class="case-stat-label">Partnership retained</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Reach</div><span class="case-stat-number">National</span><span class="case-stat-label">Beauty market scale</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Accounts</div><span class="case-stat-number">20+</span><span class="case-stat-label">Concurrent brands</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CS4 -->
+    <div class="case-panel" id="cs4">
+      <div>
+        <div class="case-header">
+          <div class="case-label">Case Study 04 · KECE Entertainment · 2020–2021</div>
+          <div class="case-title">MURI National Activation, 26 Cities</div>
+          <div class="case-context">National brand activation, field, PR, influencer integration</div>
+        </div>
+        <div class="diag-flow">
+          <div class="diag-step"><span class="num">01</span>Context</div>
+          <div class="diag-step"><span class="num">02</span>Challenge</div>
+          <div class="diag-step is-key"><span class="num">03</span>Diagnosis</div>
+          <div class="diag-step"><span class="num">04</span>Approach</div>
+          <div class="diag-step"><span class="num">05</span>Result</div>
+        </div>
+        <div class="case-rows">
+          <div class="case-row"><div class="case-row-label"><span class="step-no">01</span>Context</div><div class="case-row-content">Nationwide brand activation campaigns spanning 26 Indonesian cities simultaneously. Coordinating field teams, vendors, PR partners, and influencer integrations under one unified campaign framework.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">02</span>Challenge</div><div class="case-row-content">Executing nationally consistent brand activation across 26 geographically distributed cities while maintaining brand standards, execution quality, and commercial accountability throughout.</div></div>
+          <div class="case-row diagnosis"><div class="case-row-label"><span class="step-no">03</span>Diagnosis</div><div class="case-row-content">Primary risk was brand drift. Secondary risk was coordination failure between field teams and central management. Both required a single, clear operating framework before any execution began.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">04</span>Approach</div><div class="case-row-content">Built unified campaign framework: standardised briefing templates, city-level execution checklists, daily reporting cadences, and clear escalation structures. PR and influencer integration coordinated centrally, executed with local cultural adaptation.</div></div>
+          <div class="case-row result"><div class="case-row-label"><span class="step-no">05</span>Result</div><div class="case-row-content">6,500+ product distributions across 26 cities. Multiple MURI national records, Indonesia's highest official recognition for campaign scale. Full brand consistency maintained across all territories.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="case-stats">
+          <div class="case-stat-card"><div class="case-stat-tag">Cities</div><span class="case-stat-number">26</span><span class="case-stat-label">Simultaneous activation</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Distributions</div><span class="case-stat-number">6,500+</span><span class="case-stat-label">Across territories</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Records</div><span class="case-stat-number">2×</span><span class="case-stat-label">MURI national</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Brand</div><span class="case-stat-number">100%</span><span class="case-stat-label">Consistency maintained</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CS5 -->
+    <div class="case-panel" id="cs5">
+      <div>
+        <div class="case-header">
+          <div class="case-label">Case Study 05 · Privilege Creative Agency · 2024–2025</div>
+          <div class="case-title">Leadership Under Capital Constraint</div>
+          <div class="case-context">General manager, 13-person organisation, 14 active client accounts</div>
+        </div>
+        <div class="diag-flow">
+          <div class="diag-step"><span class="num">01</span>Context</div>
+          <div class="diag-step"><span class="num">02</span>Challenge</div>
+          <div class="diag-step is-key"><span class="num">03</span>Diagnosis</div>
+          <div class="diag-step"><span class="num">04</span>Approach</div>
+          <div class="diag-step"><span class="num">05</span>Result</div>
+        </div>
+        <div class="case-rows">
+          <div class="case-row"><div class="case-row-label"><span class="step-no">01</span>Context</div><div class="case-row-content">Creative and digital marketing agency. Committed to 14 active client accounts and a 13-person team. Investor funding terms unresolved from the first month of operations.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">02</span>Challenge</div><div class="case-row-content">Operating on less than 10% of planned working capital while maintaining full service delivery across 14 clients and full-time staff without visible external support.</div></div>
+          <div class="case-row diagnosis"><div class="case-row-label"><span class="step-no">03</span>Diagnosis</div><div class="case-row-content">Not a revenue problem. The pipeline was intact. An expense structure and workflow efficiency problem requiring surgical operational discipline, not a capital injection.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">04</span>Approach</div><div class="case-row-content">Audited every operational cost and restructured against minimum viable delivery. Renegotiated vendor terms. Rebuilt internal workflows. Maintained all 14 client relationships through personal oversight of quality and communication.</div></div>
+          <div class="case-row result"><div class="case-row-label"><span class="step-no">05</span>Result</div><div class="case-row-content">Agency reached break-even. All 14 clients retained. Lead-to-client conversion rebuilt to 85% through a new qualification and onboarding system designed during this period.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="case-stats">
+          <div class="case-stat-card"><div class="case-stat-tag">Clients</div><span class="case-stat-number">14</span><span class="case-stat-label">Retained, no churn</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">CVR</div><span class="case-stat-number">85%</span><span class="case-stat-label">Lead → client</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Capital</div><span class="case-stat-number">&lt;10%</span><span class="case-stat-label">Of planned funding</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Outcome</div><span class="case-stat-number">B/E</span><span class="case-stat-label">Break-even reached</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CS6 -->
+    <div class="case-panel" id="cs6">
+      <div>
+        <div class="case-header">
+          <div class="case-label">Case Study 06 · Kado Bajo Group · 2025–Present</div>
+          <div class="case-title">Multi-SBU Budget Strategy</div>
+          <div class="case-context">9 active SBUs, IDR 300–400M annual budget, declining tourism market</div>
+        </div>
+        <div class="diag-flow">
+          <div class="diag-step"><span class="num">01</span>Context</div>
+          <div class="diag-step"><span class="num">02</span>Challenge</div>
+          <div class="diag-step is-key"><span class="num">03</span>Diagnosis</div>
+          <div class="diag-step"><span class="num">04</span>Approach</div>
+          <div class="diag-step"><span class="num">05</span>Result</div>
+        </div>
+        <div class="case-rows">
+          <div class="case-row"><div class="case-row-label"><span class="step-no">01</span>Context</div><div class="case-row-content">Hospitality and lifestyle conglomerate with 9 active strategic business units across Bali and Nusa Tenggara. Annual marketing budget IDR 300-400 million managed independently with GM-level approval.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">02</span>Challenge</div><div class="case-row-content">Allocating a constrained annual marketing budget across 9 strategically different SBUs in a period of declining tourism market activity. Maintaining visibility for all simultaneously was commercially impossible.</div></div>
+          <div class="case-row diagnosis"><div class="case-row-label"><span class="step-no">03</span>Diagnosis</div><div class="case-row-content">A prioritisation problem. Each SBU had different revenue profiles, audience compositions, and conversion economics. Concentration in highest-ROI units was the only commercially defensible allocation.</div></div>
+          <div class="case-row"><div class="case-row-label"><span class="step-no">04</span>Approach</div><div class="case-row-content">Built a prioritisation framework using monthly P&amp;L data, occupancy rates, and audience acquisition cost per SBU. Concentrated investment in highest-ROI units. Maintained lower-priority units through PR, owned media, and CRM activation.</div></div>
+          <div class="case-row result"><div class="case-row-label"><span class="step-no">05</span>Result</div><div class="case-row-content">Revenue sustainability maintained through tourism market downturn. Marketing investment realigned to commercial performance data. Custom CRM workflow implemented to improve lead management efficiency and reduce wasted advertising spend.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="case-stats">
+          <div class="case-stat-card"><div class="case-stat-tag">SBUs</div><span class="case-stat-number">9</span><span class="case-stat-label">Active units managed</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Budget</div><span class="case-stat-number">400M</span><span class="case-stat-label">IDR annual</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Allocation</div><span class="case-stat-number">P&amp;L</span><span class="case-stat-label">Aligned framework</span></div>
+          <div class="case-stat-card"><div class="case-stat-tag">Systems</div><span class="case-stat-number">Custom</span><span class="case-stat-label">CRM workflow built</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TIKTOK CHART -->
+<section id="tiktok">
+  <div class="container">
+    <div class="tiktok-grid">
+      <div class="reveal">
+        <div class="eyebrow-row on-dark">§ 05.1</div>
+        <h2 class="t-h1">Rp644M to <em style="font-style:italic;color:var(--copper-2);">Rp3B+</em></h2>
+        <p class="tk-lead">Revenue grew 4.7× in six months through disciplined conversion architecture, not increased ad spend.</p>
+        <div class="tk-stats">
+          <div class="tk-stat-card"><div class="tk-stat-tag">Revenue ↗</div><div class="tk-stat-num">4.7×</div><div class="tk-stat-lbl">Growth multiplier</div></div>
+          <div class="tk-stat-card"><div class="tk-stat-tag">Buyers ↗</div><div class="tk-stat-num">679%</div><div class="tk-stat-lbl">1,734 → 13,295</div></div>
+          <div class="tk-stat-card"><div class="tk-stat-tag">Peak orders</div><div class="tk-stat-num">16,160</div><div class="tk-stat-lbl">From 2,098 baseline</div></div>
+          <div class="tk-stat-card"><div class="tk-stat-tag">Peak buyers</div><div class="tk-stat-num">13,295</div><div class="tk-stat-lbl">In a single month</div></div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="bar-chart-wrap">
+          <div class="chart-meta">
+            <span class="ctitle">Monthly Revenue, IDR</span>
+            <span class="crange">Feb — Jul</span>
+          </div>
+          <div class="bar-chart" id="barChart">
+            <div class="bar-wrap">
+              <div class="bar-value">Rp644M</div>
+              <div class="bar" id="barFeb" data-h="22"></div>
+              <div class="bar-label">Feb</div>
+            </div>
+            <div class="bar-wrap">
+              <div class="bar-value">Rp1.3B</div>
+              <div class="bar" id="barMar" data-h="43"></div>
+              <div class="bar-label">Mar</div>
+            </div>
+            <div class="bar-wrap">
+              <div class="bar-value">Rp1.8B</div>
+              <div class="bar" id="barJun" data-h="60"></div>
+              <div class="bar-label">Jun</div>
+            </div>
+            <div class="bar-wrap">
+              <div class="bar-value" style="color:var(--copper-2);">Rp3.0B</div>
+              <div class="bar peak" id="barJul" data-h="100"></div>
+              <div class="bar-label">Jul</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section id="brands">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow-row">§ 06</div>
+      <h2 class="t-h1">Brands I have worked with.</h2>
+      <p class="section-lead">Brands across beauty, hospitality, F&amp;B, retail, lifestyle, and FMCG sectors across Indonesia and internationally.</p>
+    </div>
+    <div class="brand-stack reveal" id="brand-stack">
+      <!-- LEFT COLUMN (7 items) -->
+      <ul class="brand-col left">
+        <li class="brand-row"><image-slot id="lg-msglow" fit="contain" shape="rect" src="logos/msglow.png" placeholder="MS Glow"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-erha" fit="contain" shape="rect" src="logos/erha.png" placeholder="ERHA"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-thomascook" fit="contain" shape="rect" src="logos/thomascook.png" placeholder="Thomas Cook"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-j99corp" fit="contain" shape="rect" src="logos/j99corp.png" placeholder="J99 Corp"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-roove" fit="contain" shape="rect" src="logos/roove.png" placeholder="Roove"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-sudobrew" fit="contain" shape="rect" src="logos/sudobrew.png" placeholder="Sudo Brew"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-miraigroup" fit="contain" shape="rect" src="logos/miraigroup.png" placeholder="Mirai Group Japan"></image-slot></li>
+      </ul>
+
+      <!-- CENTER COLUMN (7 items) -->
+      <ul class="brand-col center">
+        <li class="brand-row"><image-slot id="lg-noaa" fit="contain" shape="rect" src="logos/noaa.png" placeholder="NOAA"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-sukkhacitta" fit="contain" shape="rect" src="logos/sukkhacitta.png" placeholder="Sukkha Citta"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-spicemantra" fit="contain" shape="rect" src="logos/spicemantra.png" placeholder="Spice Mantra"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-prastore" fit="contain" shape="rect" src="logos/prastore.png" placeholder="Prastore"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-privilege" fit="contain" shape="rect" src="logos/privilege.png" placeholder="Privilege Creative"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-auntyjis" fit="contain" shape="rect" src="logos/auntyjis.png" placeholder="Aunty Jis"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-paletas" fit="contain" shape="rect" src="logos/paletas.png" placeholder="Paletas"></image-slot></li>
+      </ul>
+
+      <!-- RIGHT COLUMN (7 items) -->
+      <ul class="brand-col right">
+        <li class="brand-row"><image-slot id="lg-sariater" fit="contain" shape="rect" src="logos/sariater.png" placeholder="Sari Ater Hotel"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-adafashion" fit="contain" shape="rect" src="logos/adafashion.png" placeholder="Ada Fashion"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-dny" fit="contain" shape="rect" src="logos/dny.png" placeholder="DNY"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-almona" fit="contain" shape="rect" src="logos/almona.png" placeholder="Almona"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-buti" fit="contain" shape="rect" src="logos/buti.png" placeholder="Buti"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-homewell" fit="contain" shape="rect" src="logos/homewell.png" placeholder="Homewell"></image-slot></li>
+        <li class="brand-row"><image-slot id="lg-hwd" fit="contain" shape="rect" src="logos/hwd.png" placeholder="Homeware Depo"></image-slot></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow-row">§ 07</div>
+      <h2 class="t-h1">I build systems, not just use tools.</h2>
+      <p class="section-lead">A tool is something you use once. A system is something the organisation depends on after you leave.</p>
+    </div>
+    <div class="tools-grid reveal">
+      <div class="tool-card">
+        <div class="t-num">01 / AI Workflows</div>
+        <div class="t-title">AI-Integrated Marketing Workflows</div>
+        <div class="t-desc">Certified practitioner of ChatGPT, Claude, and Jasper AI, Coursiv, April 2026. Applied daily across campaign brief development, content production at scale, competitive analysis, and performance reporting narrative generation. Human judgment leads. AI accelerates execution.</div>
+        <div class="t-tags"><span class="t-tag">ChatGPT</span><span class="t-tag">Claude</span><span class="t-tag">Jasper AI</span><span class="t-tag">Coursiv 2026</span></div>
+      </div>
+      <div class="tool-card">
+        <div class="t-num">02 / CRM Architecture</div>
+        <div class="t-title">CRM, Lead Management Architecture</div>
+        <div class="t-desc">At Kado Bajo Group, designed and implemented a custom CRM workflow in collaboration with technology vendors, structured around lead source tracking, qualification scoring, and advertising spend attribution across 9 SBUs. Improved lead management efficiency and reduced wasted digital advertising spend.</div>
+        <div class="t-tags"><span class="t-tag">CRM Design</span><span class="t-tag">Lead Scoring</span><span class="t-tag">Attribution</span></div>
+      </div>
+      <div class="tool-card">
+        <div class="t-num">03 / Performance Dash</div>
+        <div class="t-title">Performance Dashboarding, KPI Visibility</div>
+        <div class="t-desc">At RTI Group, built automated KPI dashboards that reduced manual reporting overhead by 35% and gave leadership real-time visibility into campaign performance by channel, team, and commercial outcome. Design principle: every metric must connect to a revenue or cost number.</div>
+        <div class="t-tags"><span class="t-tag">GA4</span><span class="t-tag">KPI Design</span><span class="t-tag">35% Efficiency</span></div>
+      </div>
+      <div class="tool-card">
+        <div class="t-num">04 / Paid Media</div>
+        <div class="t-title">Paid Media, Campaign Execution</div>
+        <div class="t-desc">Hands-on management of Meta Ads, Google Ads, and TikTok Ads at portfolio scale. Monthly budgets up to IDR 1.5 billion. CAC, ROAS, and conversion rate optimisation as core daily practice. Creative governance across multiple concurrent campaigns.</div>
+        <div class="t-tags"><span class="t-tag">Meta Ads</span><span class="t-tag">Google Ads</span><span class="t-tag">TikTok Ads</span><span class="t-tag">Canva</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENGAGEMENT -->
+<section id="engagement">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow-row">§ 08</div>
+      <h2 class="t-h1">Three ways to work together.</h2>
+      <p class="section-lead">Different scope, different structure, the same standard of commercial accountability.</p>
+    </div>
+    <div class="engagement-grid reveal">
+      <div class="eng-card">
+        <div class="eng-num">Engagement 01</div>
+        <div class="eng-title">Corporate Leadership</div>
+        <div class="eng-desc">Full-time or contract senior marketing leadership embedded within an organisation. I own strategy, team performance, budget governance, and commercial accountability from day one.</div>
+        <div class="eng-fit">
+          <span class="label">Best fit</span>
+          Multi-brand businesses, hospitality groups, creative agencies, regional corporations.
+        </div>
+        <div class="eng-mark">01</div>
+      </div>
+      <div class="eng-card">
+        <div class="eng-num">Engagement 02</div>
+        <div class="eng-title">Remote Director</div>
+        <div class="eng-desc">Senior marketing direction delivered remotely. Campaign direction, team oversight, agency management, and structured reporting workflows. Available across Indonesia, Singapore, Australia, and beyond.</div>
+        <div class="eng-fit">
+          <span class="label">Best fit</span>
+          Regional businesses, e-commerce brands, international companies entering Indonesian and SEA markets.
+        </div>
+        <div class="eng-mark">02</div>
+      </div>
+      <div class="eng-card">
+        <div class="eng-num">Engagement 03</div>
+        <div class="eng-title">Advisory, Consulting</div>
+        <div class="eng-desc">Project-based or retainer advisory. Marketing audit and diagnosis, campaign strategy, KPI framework design, partnership advisory. Engagements typically 3-6 months with clear commercial scope.</div>
+        <div class="eng-fit">
+          <span class="label">Best fit</span>
+          Founder-led SMEs, growth-stage brands, lifestyle and hospitality brands at an inflection point.
+        </div>
+        <div class="eng-mark">03</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTABLE -->
+<section id="notable">
+  <div class="container">
+    <div class="notable-head reveal">
+      <div class="eyebrow-row on-dark">§ 09</div>
+      <h2 class="t-h1">Selected from 20+ brands, 9+ years.</h2>
+    </div>
+    <div class="notable-grid reveal">
+      <div class="notable-card">
+        <image-slot id="notable-msglow" class="logo-slot" shape="rect" placeholder="MS Glow"></image-slot>
+        <div class="notable-brand">MS Glow</div>
+        <div class="notable-role">Executive Partnership<br>4 Campaigns · Multi-year</div>
+      </div>
+      <div class="notable-card">
+        <image-slot id="notable-rti" class="logo-slot" shape="rect" placeholder="RTI / Roove"></image-slot>
+        <div class="notable-brand">RTI Group · Roove</div>
+        <div class="notable-role">Performance Marketing<br>IDR 1.5B / mo Portfolio</div>
+      </div>
+      <div class="notable-card">
+        <image-slot id="notable-sudobrew" class="logo-slot" shape="rect" placeholder="Sudo Brew"></image-slot>
+        <div class="notable-brand">Sudo Brew</div>
+        <div class="notable-role">Brand Activation<br>MURI Record Campaign</div>
+      </div>
+      <div class="notable-card">
+        <image-slot id="notable-ptpn" class="logo-slot" shape="rect" placeholder="PTPN"></image-slot>
+        <div class="notable-brand">PTPN Holding</div>
+        <div class="notable-role">BUMN<br>Official Instagram Management</div>
+      </div>
+      <div class="notable-card">
+        <image-slot id="notable-ih" class="logo-slot" shape="rect" placeholder="Irfan Hakim"></image-slot>
+        <div class="notable-brand">Irfan Hakim</div>
+        <div class="notable-role">Celebrity Personal Brand<br>Social Media Strategy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow-row">§ 10</div>
+      <h2 class="t-h1">Three steps. Transparent. No pressure.</h2>
+    </div>
+    <div class="process-steps reveal">
+      <div class="process-step">
+        <div class="step-num"><span class="glyph">01</span><span>Discovery</span></div>
+        <div class="step-title">Discovery Conversation</div>
+        <div class="step-desc">45 minutes, no fee, no obligation. I understand your commercial context and the specific problem to be solved. You understand how I think and whether my approach fits.</div>
+        <div class="step-meta">⏱ 45 min · Video or in-person</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num"><span class="glyph">02</span><span>Summary</span></div>
+        <div class="step-title">Summary of Findings</div>
+        <div class="step-desc">Within 48 hours. A written document outlining what I heard, how I frame the challenge, and what a potential engagement could look like. This document alone is frequently useful.</div>
+        <div class="step-meta">⏱ 48 hrs · Written deliverable</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num"><span class="glyph">03</span><span>Proposal</span></div>
+        <div class="step-title">Engagement Proposal</div>
+        <div class="step-desc">If we proceed. Clear scope, deliverables, commercial terms, and expected outcomes. No ambiguity. No open-ended commitments on either side.</div>
+        <div class="step-meta">⏱ On agreement · Formal scope</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT (FOCUS) -->
+<section id="contact">
+  <div class="container contact-wrap">
+    <div class="contact-meta reveal">
+      <div class="left"><span class="pulse"></span> Currently Accepting Engagements</div>
+      <div class="right">§ 11</div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="contact-statement">
+          If what you see here is relevant to what you are building, <em>let's find out if I can help.</em>
+        </p>
+        <p class="contact-sub">A 45-minute Discovery Conversation. No agenda. No pitch. A clear look at your commercial situation and whether I can genuinely help.</p>
+
+        <div class="contact-items">
+          <a class="contact-item" href="mailto:maharanidigitalhub@gmail.com">
+            <span class="contact-item-label">Email</span>
+            <span class="contact-item-value">maharanidigitalhub@gmail.com</span>
+          </a>
+          <a class="contact-item" href="https://wa.me/62811143550">
+            <span class="contact-item-label">WhatsApp · Phone</span>
+            <span class="contact-item-value">+62 811 143 550</span>
+          </a>
+          <a class="contact-item" href="https://linkedin.com/in/ikamaharaniratri">
+            <span class="contact-item-label">LinkedIn</span>
+            <span class="contact-item-value">/in/ikamaharaniratri</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-item-label">Location</span>
+            <span class="contact-item-value">Bali, Indonesia · Remote · </span>
+          </div>
+        </div>
+
+        <div class="contact-availability">
+          <span class="av-tag">Availability</span>
+          <span>Currently open to senior corporate discussions, remote director mandates, and advisory retainers.</span>
+        </div>
+
+        <a href="mailto:maharanidigitalhub@gmail.com" class="btn btn-primary">Book a Discovery Call <span class="arrow">→</span></a>
+      </div>
+
+      <div class="reveal reveal-delay-2 contact-card-right">
+        <div class="contact-portrait">
+          <image-slot id="contact-portrait" class="portrait-slot" shape="rect" src="uploads/Case study ika.jpg study ika.jpg" placeholder="Drop foto Ika · 4:5"></image-slot>
+        </div>
+        <div class="contact-vcard">
+          <span>Download vCard</span>
+          <span class="ic">↓ .vcf</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-name">Ika Maharani Ratri</div>
+    <div class="footer-copy">© 2026 · Bali, Indonesia</div>
+  </div>
+</footer>
+
+<script>
+// ── Nav scroll
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ── Reveal on scroll
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// ── Accordion principle (start with first open)
+function togglePrinciple(btn) {
+  const item = btn.closest('.principle-item');
+  const isActive = item.classList.contains('active');
+  document.querySelectorAll('.principle-item').forEach(i => i.classList.remove('active'));
+  if (!isActive) item.classList.add('active');
+}
+// open first by default
+document.querySelector('.principle-item')?.classList.add('active');
+
+// ── Case study tabs
+function switchCase(btn, id) {
+  document.querySelectorAll('.case-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.case-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+
+// ── Bar chart animation
+const chartObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const bars = e.target.querySelectorAll('.bar');
+      bars.forEach((bar, i) => {
+        setTimeout(() => {
+          bar.style.height = bar.dataset.h + '%';
+        }, 120 + i * 180);
+      });
+      chartObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+const barChart = document.getElementById('barChart');
+if (barChart) chartObserver.observe(barChart);
+
+// ── Brand stack 3D entrance + toggle
+const brandStack = document.getElementById('brand-stack');
+const brandToggle = document.getElementById('brand-toggle');
+if (brandStack) {
+  // default to showing all slots so user can drop logos; toggle to hide empty
+  const saved = localStorage.getItem('brand-stack-view');
+  if (saved === 'view') brandStack.classList.remove('show-empty');
+  else brandStack.classList.add('show-empty');
+
+  brandToggle?.addEventListener('click', () => {
+    brandStack.classList.toggle('show-empty');
+    localStorage.setItem('brand-stack-view', brandStack.classList.contains('show-empty') ? 'edit' : 'view');
+  });
+}
+
+// ── BRANDING SECTION SCROLL ANIMATION (Page 6)
+function initBrandingAnimation() {
+  gsap.registerPlugin(ScrollTrigger);
+  
+  const brandStack = document.getElementById('brand-stack');
+  if (!brandStack) return;
+
+  // LEFT COLUMN - Items rotate -8deg
+  gsap.utils.toArray('#brand-stack .brand-col.left .brand-row').forEach((item) => {
+    gsap.to(item, {
+      rotate: -8,
+      scrollTrigger: {
+        trigger: item,
+        start: 'top 70%',
+        end: 'bottom 30%',
+        scrub: 1,
+      }
+    });
+  });
+
+  // RIGHT COLUMN - Items rotate +8deg
+  gsap.utils.toArray('#brand-stack .brand-col.right .brand-row').forEach((item) => {
+    gsap.to(item, {
+      rotate: 8,
+      scrollTrigger: {
+        trigger: item,
+        start: 'top 70%',
+        end: 'bottom 30%',
+        scrub: 1,
+      }
+    });
+  });
+
+  // LEFT COLUMN CONTAINER - Lean -3deg
+  gsap.to('#brand-stack .brand-col.left', {
+    rotate: -3,
+    scrollTrigger: {
+      trigger: '#brand-stack',
+      start: 'top 60%',
+      end: 'bottom 20%',
+      scrub: 1,
+    }
+  });
+
+  // RIGHT COLUMN CONTAINER - Lean +3deg
+  gsap.to('#brand-stack .brand-col.right', {
+    rotate: 3,
+    scrollTrigger: {
+      trigger: '#brand-stack',
+      start: 'top 60%',
+      end: 'bottom 20%',
+      scrub: 1,
+    }
+  });
+
+  // CENTER COLUMN - Parallax translation
+  gsap.to('#brand-stack .brand-col.center', {
+    y: -60,
+    scrollTrigger: {
+      trigger: '#brand-stack',
+      start: 'top 60%',
+      end: 'bottom 20%',
+      scrub: 1,
+    }
+  });
+}
+
+// Initialize on page load
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => setTimeout(initBrandingAnimation, 100));
+} else {
+  setTimeout(initBrandingAnimation, 100);
+}
+</script>
+
+</body>
+</html>
